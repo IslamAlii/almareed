@@ -29,21 +29,25 @@
         </a>
         <ul>
           <li><a href="../index.html">الرئيسية</a></li>
-          <li><a href="about.html">عن المؤسسة</a></li>
+          <li><a href="../pages/about.html">عن المؤسسة </a></li>
           <li><a href="#">القوافل</a></li>
-          <li><a href="#">انشطتنا التوعوية</a></li>
+          <li><a href="#">أنشطتنا التوعوية</a></li>
           <li><a href="#">تواصل معنا</a></li>
+
+          <div class="buttons">
+            <button><a href="../pages/volunteer.html">تطوع معنا</a></button>
+            <button><a href="../pages/donate.html">تبرع الأن</a></button>
+          </div>
         </ul>
-        <div class="buttons">
-          <button><a href="pages/volunteer.html">تطوع معنا</a></button>
-          <button><a href="#">تبرع الأن</a></button>
-        </div>
+
+        <a href="#" class="hamburger-btn">X</a>
       </div>
     </nav>
 
     <section class="volanteer">
       <div class="container">
         <h2 class="heading">تطوع معنا</h2>
+        <p class="main-p"></p>
         <form>
           <div class="name">
             <h2>الإسم</h2>
@@ -61,6 +65,40 @@
             <h2>رقم الهاتف</h2>
             <input type="text" />
           </div>
+          <div class="facebook">
+            <h2>حساب الفيسبوك</h2>
+            <input type="text" />
+          </div>
+          <div class="learning">
+            <h2>المؤهل الدراسي</h2>
+            <select name="" id="">
+              <option value="">بدون</option>
+              <option value="">طالب اعدادي</option>
+              <option value="">طالب ثانوي</option>
+              <option value="">طالب جامعي</option>
+              <option value="">خريج</option>
+            </select>
+          </div>
+          <div class="college">
+            <h2>المدرسة/الكلية</h2>
+            <input type="text" />
+          </div>
+          <div class="skills">
+            <h2>المهارات الشخصية</h2>
+            <textarea name="" id="" rows="5"></textarea>
+          </div>
+          <div class="experince">
+            <h2>هل شاركت في اعمال تطوعية من قبل؟</h2>
+            <input type="radio" name="answer" id="yes" value="yes" />
+            <label for="yes">نعم</label><br />
+            <input type="radio" name="answer" id="yes" value="yes" />
+            <label for="no">لا</label><br />
+            <textarea
+              rows="3"
+              placeholder="برجاء كتابة الاعمال التطوعية التي شاركت بها"
+            ></textarea>
+          </div>
+          <button>إرسال البيانات</button>
         </form>
       </div>
     </section>

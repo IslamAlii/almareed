@@ -26,6 +26,16 @@ body {
   font-size: 36px;
 }
 
+.main-p {
+  width: 70%;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
 nav {
   width: 100%;
   background-color: white;
@@ -63,6 +73,11 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--sub-color);
+}
+
+nav .buttons {
+  margin-right: 10rem;
+  display: inline-block;
 }
 
 nav .buttons button {
@@ -103,8 +118,12 @@ nav .buttons button:last-of-type a {
   color: white;
 }
 
-nav .buttons button a:hover {
+nav .buttons button:hover a {
   color: white;
+}
+
+nav .hamburger-btn {
+  display: none;
 }
 
 .our-story {
@@ -113,19 +132,61 @@ nav .buttons button a:hover {
   top: 20%;
 }
 
-.our-story p {
-  width: 70%;
-  margin: auto;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 26px;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
 .our-story video {
   width: 90vw;
   height: 70vh;
   margin-top: 3rem;
+}
+
+/*---------------- Responsve Styles -------------------*/
+@media (max-width: 992px) {
+  nav {
+    height: 20vh;
+    border-bottom: 1px solid black;
+  }
+
+  nav .container {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    padding-top: 2rem;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  nav ul .buttons {
+    display: block;
+    margin: 2rem 0 0;
+  }
+
+  nav ul .buttons button {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  nav .hamburger-btn {
+    color: white;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-color);
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
 }
