@@ -140,7 +140,9 @@ nav .hamburger-btn {
   }
 
   nav .container {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   nav img {
@@ -155,7 +157,7 @@ nav .hamburger-btn {
     background-color: white;
     transition: height 0.5s;
     position: absolute;
-    top: 20vh;
+    top: 15vh;
     left: 0;
   }
 
