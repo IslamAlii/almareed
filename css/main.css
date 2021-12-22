@@ -130,13 +130,18 @@ nav .hamburger-btn {
 /*---------------- Responsve Styles -------------------*/
 @media (max-width: 992px) {
   nav {
-    height: 20vh;
+    height: 15vh;
     border-bottom: 1px solid black;
     background-color: white;
   }
 
   nav .container {
     justify-content: space-between;
+  }
+
+  nav img {
+    width: 70px;
+    height: 70px;
   }
 
   nav ul {
@@ -151,7 +156,7 @@ nav .hamburger-btn {
   }
 
   nav ul.active {
-    height: 80vh;
+    height: 85vh;
     padding-top: 1rem;
   }
 
