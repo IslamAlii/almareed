@@ -53,10 +53,15 @@ nav .container {
   align-items: center;
 }
 
-nav img {
+nav .container > a {
   width: 100px;
   height: 100px;
   cursor: pointer;
+}
+
+nav .container > a img {
+  width: 100%;
+  height: 100%;
 }
 
 nav ul li {
@@ -135,7 +140,6 @@ nav .hamburger-btn {
 
   nav {
     height: 15vh;
-    border-bottom: 1px solid black;
     background-color: white;
   }
 
@@ -145,9 +149,10 @@ nav .hamburger-btn {
     align-items: center;
   }
 
-  nav img {
+  nav .container > a {
     width: 70px;
     height: 70px;
+    margin-top: 7px;
   }
 
   nav ul {
