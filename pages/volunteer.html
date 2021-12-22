@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تطوع معنا</title>
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/volunteer.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,7 @@
         <a href="../index.html">
           <img src="../images/logo.png" alt="" />
         </a>
-        <ul>
+        <ul id="nav-ul">
           <li><a href="../index.html">الرئيسية</a></li>
           <li><a href="../pages/about.html">عن المؤسسة </a></li>
           <li><a href="#">القوافل</a></li>
@@ -40,7 +40,7 @@
           </div>
         </ul>
 
-        <a href="#" class="hamburger-btn">X</a>
+        <i class="fas fa-bars hamburger-btn" id="hamburger-btn"></i>
       </div>
     </nav>
 
@@ -91,7 +91,7 @@
             <h2>هل شاركت في اعمال تطوعية من قبل؟</h2>
             <input type="radio" name="answer" id="yes" value="yes" />
             <label for="yes">نعم</label><br />
-            <input type="radio" name="answer" id="yes" value="yes" />
+            <input type="radio" name="answer" id="no" value="no" />
             <label for="no">لا</label><br />
             <textarea
               rows="3"
@@ -102,5 +102,10 @@
         </form>
       </div>
     </section>
+    <script src="../js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fb70e157c7.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
