@@ -60,6 +60,8 @@
 .donate form .area .internal input,
 .donate form .area .external input {
   outline: 0;
+  text-align: center;
+  margin: auto;
 }
 
 .donate form button {
