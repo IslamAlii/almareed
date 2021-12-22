@@ -129,6 +129,10 @@ nav .hamburger-btn {
 
 /*---------------- Responsve Styles -------------------*/
 @media (max-width: 992px) {
+  .heading {
+    font-size: 30px;
+  }
+
   nav {
     height: 15vh;
     border-bottom: 1px solid black;
@@ -189,10 +193,6 @@ nav .hamburger-btn {
     line-height: 35px;
     border-radius: 5px;
     text-decoration: none;
-  }
-
-  .heading {
-    font-size: 30px;
   }
 }
 
