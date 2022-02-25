@@ -1,7 +1,6 @@
 .helping-patient {
   width: 100%;
-  position: absolute;
-  top: 20%;
+  margin-top: 8rem;
 }
 
 .helping-patient .helping-patient-container {

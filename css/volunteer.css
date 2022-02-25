@@ -1,7 +1,6 @@
 .volanteer {
   width: 100%;
-  position: absolute;
-  top: 20%;
+  margin-top: 8rem;
 }
 
 .volanteer form {
@@ -90,6 +89,10 @@
 
 .volanteer form button:hover {
   background-color: var(--main-color);
+}
+/* --------------- Footer ------------------------- */
+footer {
+  margin: 0;
 }
 
 /* --------------- Responsive styles --------------- */

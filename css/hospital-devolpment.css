@@ -1,7 +1,6 @@
 .hospital-devolpment {
   width: 100%;
-  position: absolute;
-  top: 20%;
+  margin-top: 8rem;
 }
 
 .hospital-devolpment .hospital-devolpment-container {

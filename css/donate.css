@@ -1,7 +1,6 @@
 .donate {
   width: 100%;
-  position: absolute;
-  top: 20%;
+  margin-top: 8rem;
 }
 
 .donate form {
@@ -79,6 +78,10 @@
 
 .donate form button:hover {
   background-color: var(--sub-color);
+}
+/* --------------- Footer ------------------------- */
+footer {
+  margin: 0;
 }
 
 /* --------------- Responsive styles --------------- */

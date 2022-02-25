@@ -30,6 +30,8 @@ section {
 }
 
 .main-p {
+  width: 70%;
+  margin: auto;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -37,6 +39,36 @@ section {
   font-weight: bold;
 }
 
+.btn {
+  font-family: "El Messiri", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.btn-primary {
+  background-color: var(--sub-color);
+  border: 1px solid var(--sub-color);
+}
+
+.btn-sub {
+  color: var(--sub-color);
+  background-color: white;
+  border: 1px solid var(--sub-color);
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+/* ----------- Navbar Styles -----------------------*/
 nav {
   width: 100%;
   background-color: white;
@@ -54,8 +86,8 @@ nav .container {
 }
 
 nav img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -98,6 +130,7 @@ nav .buttons button:first-of-type {
   background-color: white;
   border: 1px solid var(--sub-color);
 }
+
 nav .buttons button:last-of-type {
   background-color: var(--sub-color);
 }
@@ -127,10 +160,104 @@ nav .hamburger-btn {
   display: none;
 }
 
+/* --------------- Footer Styles --------------------*/
+footer {
+  background-color: #f1f1f1;
+  margin-top: 5rem;
+}
+
+footer .container {
+  padding: 2rem 0;
+}
+
+footer .footer-heading {
+  color: var(--sub-color);
+}
+
+footer .social {
+  width: 100%;
+  text-align: center;
+}
+
+footer .social .accounts {
+  margin-bottom: 1rem;
+}
+
+footer .social .accounts h3 {
+  font-size: 25px;
+}
+
+footer .social .accounts .icons > div {
+  display: inline-block;
+}
+
+footer .social .accounts .icons > div a i {
+  font-size: 50px;
+  color: #333;
+  margin-right: 1rem;
+  transition: 0.3s;
+}
+
+footer .social .accounts .icons > div a i:hover {
+  color: var(--main-color);
+}
+
+footer .social .newsletter h3,
+footer .social .newsletter input,
+footer .social .newsletter button {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+footer .social .newsletter input {
+  width: 300px;
+  padding: 0.75rem;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+}
+
+footer .more {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+footer .more .links a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+footer .more .links a:hover {
+  color: var(--main-color);
+}
+
+footer .more .contacts span {
+  display: block;
+}
+
+footer .more .contacts span i {
+  color: #333;
+  font-size: 25px;
+}
+
+footer .copyrights {
+  padding: 15px 0;
+  background-color: #c9c9c9;
+  text-align: center;
+}
+
 /*---------------- Responsve Styles -------------------*/
 @media (max-width: 992px) {
+  .heading {
+    font-size: 30px;
+  }
+
   nav {
-    height: 20vh;
+    height: 14vh;
     border-bottom: 1px solid black;
     background-color: white;
   }
@@ -146,12 +273,12 @@ nav .hamburger-btn {
     background-color: white;
     transition: height 0.5s;
     position: absolute;
-    top: 20vh;
+    top: 14vh;
     left: 0;
   }
 
   nav ul.active {
-    height: 80vh;
+    height: 86vh;
     padding-top: 1rem;
   }
 
@@ -186,13 +313,27 @@ nav .hamburger-btn {
     text-decoration: none;
   }
 
-  .heading {
-    font-size: 30px;
+  footer .social .newsletter h3 {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .more {
+    grid-template-columns: repeat(2, 48%);
+  }
+
+  footer .more > div {
+    margin-top: 1rem;
   }
 }
 
 @media (max-width: 576px) {
   .heading {
     font-size: 24px;
+  }
+
+  footer .more {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

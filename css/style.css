@@ -40,6 +40,39 @@ header main {
   transform: translatey(-10px);
 }
 
+.counter {
+  color: white;
+  background-color: var(--sub-color);
+  margin-top: 5rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.counter .container {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+}
+
+.counter .container > div {
+  margin-top: 1rem;
+}
+
+.counter .container > div i {
+  font-size: 50px;
+  display: block;
+}
+
+.counter .container > div .number {
+  font-size: 50px;
+  display: block;
+  font-weight: bold;
+}
+
+/* -------------------- Footer ----------------------------- */
+footer {
+  margin-top: 0;
+}
 /* --------------- Responsive styles --------------- */
 @media (max-width: 992px) {
   .fields .fields-container {
@@ -56,6 +89,28 @@ header main {
   .fields .fields-container > a {
     height: 300px;
   }
+
+  .counter .container {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: space-between;
+  }
+
+  .counter .container > div {
+    margin-bottom: 1rem;
+  }
+
+  .counter .container > div i {
+    font-size: 30px;
+  }
+
+  .counter .container > div .number {
+    font-size: 30px;
+  }
+
+  .counter .container > div h3 {
+    margin-top: -10px !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -65,5 +120,11 @@ header main {
 
   .fields .fields-container > a {
     height: 300px;
+  }
+
+  .counter .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
   }
 }

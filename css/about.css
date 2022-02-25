@@ -1,11 +1,14 @@
 .our-story {
   width: 100%;
-  position: absolute;
-  top: 15%;
+  margin-top: 8rem;
 }
 
 .our-story video {
   width: 90vw;
   height: 70vh;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+footer {
+  margin: 0;
 }
