@@ -1,0 +1,121 @@
+.volanteer {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.volanteer form {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.volanteer form > div {
+  margin-bottom: 0.3rem;
+}
+
+.volanteer form > div h2 {
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.volanteer form > div input,
+.volanteer form > div select,
+.volanteer form > div textarea {
+  font-size: 20px;
+  width: 70%;
+  padding: 0.3rem;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.volanteer form > div input:focus,
+.volanteer form > div select:focus,
+.volanteer form > div textarea:focus {
+  outline: 1px solid #0070b2;
+}
+
+.volanteer form > div select {
+  cursor: pointer;
+}
+
+.volanteer form > div textarea {
+  height: 5rem;
+}
+
+.volanteer form .skills h2 {
+  line-height: 5rem;
+  padding: 0;
+}
+
+.volanteer form .experince h2 {
+  display: block;
+}
+
+.volanteer form .experince input {
+  font-size: 20px;
+  width: 2rem;
+  padding: 0;
+  float: right;
+}
+
+.volanteer form .experince input:focus {
+  outline: 0;
+}
+
+.volanteer form .experince label {
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.volanteer form .experince textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.volanteer form button {
+  font-family: "El Messiri", sans-serif;
+  color: white;
+  background-color: var(--sub-color);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: block;
+  margin: 1rem auto;
+}
+
+.volanteer form button:hover {
+  background-color: var(--main-color);
+}
+/* --------------- Footer ------------------------- */
+footer {
+  margin: 0;
+}
+
+/* --------------- Responsive styles --------------- */
+@media (max-width: 992px) {
+  .volanteer form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .volanteer form > div h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .volanteer form > div h2 {
+    font-size: 18px;
+  }
+
+  .volanteer form > div input,
+  .volanteer form > div select,
+  .volanteer form > div textarea {
+    width: 65%;
+  }
+}
