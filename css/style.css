@@ -5,11 +5,37 @@ header main {
   background-size: cover;
 }
 
+.about .about-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.about .about-container div .main-p {
+  width: 100%;
+}
+
+.about .about-container div .btn {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.about .about-container img {
+  width: 100%;
+  height: 300px;
+}
+
+/* ------------------------- Fields Section --------------------- */
 .fields .fields-container {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 24%);
   justify-content: space-between;
+  position: relative;
 }
 
 .fields .fields-container > a {

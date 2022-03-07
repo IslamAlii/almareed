@@ -22,26 +22,46 @@
     />
 </head>
 <body>
-    <nav>
-        <div class="container">
-          <a href="../index.html">
-            <img src="../images/logo.png" alt="" />
-          </a>
-          <ul id="nav-ul">
-            <li><a href="../index.html">الرئيسية</a></li>
-            <li><a href="../pages/about.html">عن المؤسسة </a></li>
-            <li><a href="#">القوافل</a></li>
-            <li><a href="#">أنشطتنا التوعوية</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-  
-            <div class="buttons">
-              <button><a href="../pages/volunteer.html">تطوع معنا</a></button>
-              <button><a href="donate.html">تبرع الأن</a></button>
+
+  <nav>
+    <div class="container">
+      <a href="../index.html">
+        <img src="../images/logo.png" alt="" />
+      </a>
+
+      <div class="nav-ul">
+        <ul class="main-ul">
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="../pages/about.html">عن المؤسسة </a></li>
+          <li class="dropdown"><a href="#">مجالات عمل المؤسسة <i class="fa-solid fa-caret-down"></i></a>
+            <div  class="dropdown-menu">
+              <ul class="large-screen-menu">
+                <li><a href="../pages/caravans.html"> القوافل الطبية</a></li>
+                <li><a href="../pages/health-awarness.html">التوعية الطبية<a></li>
+                <li><a href="../pages/helping-cases.html">مساعدة الحالات</a></li>
+                <li><a href="../pages/hospital-devolpment.html">التطوير الطبي للمستشفيات الحكومية</a></li>
+              </ul>
             </div>
-          </ul>
-        <i class="fas fa-bars hamburger-btn" id="hamburger-btn"></i>
+            <ul class="small-screen-menu">
+              <li><a href="../pages/caravans.html"> القوافل الطبية</a></li>
+              <li><a href="../pages/health-awarness.html">التوعية الطبية<a></li>
+              <li><a href="../pages/helping-cases.html">مساعدة الحالات</a></li>
+              <li><a href="../pages/hospital-devolpment.html">التطوير الطبي للمستشفيات الحكومية</a></li>
+            </ul>
+
+          </li>
+          <li><a href="../pages/contact-us.html">تواصل معنا</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="../pages/volunteer.html" class="btn btn-sub">تطوع معنا</a>
+          <a href="donate.html" class="btn btn-primary">تبرع الأن</a>
+
         </div>
-      </nav>
+      </div>
+
+      <i class="fas fa-bars hamburger-btn" id="hamburger-btn"></i>
+    </div>
+  </nav>
 
       <section class="donate">
         <div class="container">

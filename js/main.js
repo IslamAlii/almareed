@@ -1,9 +1,23 @@
 let allCasses = document.getElementById("all-cases"),
   currentCases = document.getElementById("current-cases"),
-  allCaravans = document.getElementById("all-caravans");
+  allCaravans = document.getElementById("all-caravans"),
+  dropdown = document.querySelector(".dropdown"),
+  dropdownMenu = document.querySelector(".dropdown-menu");
 
 document.getElementById("hamburger-btn").onclick = function () {
-  document.getElementById("nav-ul").classList.toggle("active");
+  document.querySelector(".nav-ul").classList.toggle("active");
+};
+
+dropdown.addEventListener("mouseover", () => {
+  dropdownMenu.classList.add("active");
+});
+
+dropdown.addEventListener("mouseleave", () => {
+  dropdownMenu.classList.remove("active");
+});
+
+dropdown.onclick = () => {
+  document.querySelector(".small-screen-menu").classList.toggle("active");
 };
 
 window.onscroll = () => {

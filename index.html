@@ -24,34 +24,52 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container">
-          <a href="index.html">
-            <img src="images/logo.png" alt="" />
-          </a>
-  
-          <ul id="nav-ul">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="pages/about.html">عن المؤسسة </a></li>
-            <li><a href="#">مجالات عمل المؤسسة</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-  
-            <div class="buttons">
-              <button><a href="pages/volunteer.html">تطوع معنا</a></button>
-              <button><a href="pages/donate.html">تبرع الأن</a></button>
-            </div>
-          </ul>
-  
-          <i class="fas fa-bars hamburger-btn" id="hamburger-btn"></i>
-        </div>
-      </nav>
+        <nav>
+          <div class="container">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" />
+            </a>
+            
+            
+            <div class="nav-ul">
+              <ul class="main-ul">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="pages/about.html">عن المؤسسة </a></li>
+                <li class="dropdown"><a href="#">مجالات عمل المؤسسة <i class="fa-solid fa-caret-down"></i></a>
+                  <div  class="dropdown-menu">
+                    <ul class="large-screen-menu">
+                      <li><a href="pages/caravans.html"> القوافل الطبية</a></li>
+                      <li><a href="pages/health-awarness.html">التوعية الطبية<a></li>
+                      <li><a href="pages/helping-cases.html">مساعدة الحالات</a></li>
+                      <li><a href="pages/hospital-devolpment.html">التطوير الطبي للمستشفيات الحكومية</a></li>
+                    </ul>
+                  </div>
+                  <ul class="small-screen-menu">
+                    <li><a href="pages/caravans.html"> القوافل الطبية</a></li>
+                    <li><a href="pages/health-awarness.html">التوعية الطبية<a></li>
+                    <li><a href="pages/helping-cases.html">مساعدة الحالات</a></li>
+                    <li><a href="pages/hospital-devolpment.html">التطوير الطبي للمستشفيات الحكومية</a></li>
+                  </ul>
+                </li>
+                <li><a href="pages/contact-us.html">تواصل معنا</a></li>
+              </ul>
+              
+              <div class="buttons">
+                <a href="pages/volunteer.html" class="btn btn-sub">تطوع معنا</a>
+                <a href="pages/donate.html" class="btn btn-primary">تبرع الأن</a>
 
-      <main>
-        <div class="overlay"></div>
-      </main>
+              </div>
+            </div>
+    
+            <i class="fas fa-bars hamburger-btn" id="hamburger-btn"></i>
+          </div>
+        </nav>
+        <main>
+          <div class="overlay"></div>
+        </main>
     </header>
 
-    <section class="about">
+    <!-- <section class="about">
       <div class="container">
         <h2 class="heading">عن مؤسسة المريض إنسان</h2>
         <p class="main-p">
@@ -59,6 +77,25 @@
           توعية طبية ، تطوير طبى للمستشفيات ، قوافل طبية للقرى الفقيرة و مساعدة
           الحالات المحتاجة ....
         </p>
+      </div>
+    </section> -->
+
+    <section class="about">
+      <div class="container">
+        <h2 class="heading">عن مؤسسة المريض إنسان</h2>
+        <div class="about-container"> 
+          <div>
+            <p class="main-p">
+              فريق خيرى تطوعى نشأته القصر العينى قائم على توفير احتياجات المرضى من
+              توعية طبية ، تطوير طبى للمستشفيات ، قوافل طبية للقرى الفقيرة و مساعدة
+              الحالات المحتاجة ....
+            </p>
+            <a href="pages/about.html" class="btn btn-primary">
+              لمعرفة المزيد عنا
+            </a>
+          </div>
+          <img src="" alt="">
+        </div>
       </div>
     </section>
 
@@ -82,7 +119,7 @@
             <img
               src="images/work fields/Hospital medical development.png"
               alt=""
-            />
+          />
             <h3>التطوير الطبي للمستشفيات الحكومية</h3>
           </a>
         </div>
@@ -105,6 +142,11 @@
           <i class="fa-solid fa-truck-medical"></i>
           <span class="number" id="all-caravans" data-goal="500">0</span> 
           <h3>اجمالي عدد القوافل</h3>
+        </div>
+            <div>
+          <i class="fa-solid fa-truck-medical"></i>
+          <span class="number" id="all-caravans" data-goal="500">0</span> 
+          <h3>اجمالي عدد حملات التطوير الطبي</h3>
         </div>
       </div>
     </section>
@@ -184,10 +226,10 @@
 
       <p class="copyrights"> جميع الحقوق محفوظة لدي مؤسسة المريض انسان &copy;2022</p>
       </footer>
-    <script src="js/main.js"></script>
-    <script
+      <script
       src="https://kit.fontawesome.com/e5334344f8.js"
       crossorigin="anonymous"
-    ></script>
+      ></script>
+      <script src="js/main.js"></script>
   </body>
 </html>
