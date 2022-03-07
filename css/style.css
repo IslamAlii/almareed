@@ -76,7 +76,7 @@ header main {
 
 .counter .container {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(4, 24%);
   justify-content: space-between;
 }
 
