@@ -5,10 +5,114 @@
 
 .donate form {
   width: 70%;
+  margin: 1rem auto;
+}
+
+.donate form h3 {
+  color: var(--main-color);
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.donate form > div {
+  margin-bottom: 0.3rem;
+}
+
+.donate form > div h2 {
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.donate form > div input,
+.donate form > div select,
+.donate form > div textarea {
+  font-size: 20px;
+  width: 70%;
+  padding: 0.3rem;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.donate form > div input:focus,
+.donate form > div select:focus,
+.donate form > div textarea:focus {
+  outline: 1px solid #0070b2;
+}
+
+.donate form > div select {
+  cursor: pointer;
+}
+
+.donate form > div textarea {
+  height: 5rem;
+}
+
+.donate form .skills h2 {
+  line-height: 5rem;
+  padding: 0;
+}
+
+.donate form .experince h2 {
+  display: block;
+}
+
+.donate form .experince input {
+  font-size: 20px;
+  width: 2rem;
+  padding: 0;
+  float: right;
+}
+
+.donate form .experince input:focus {
+  outline: 0;
+}
+
+.donate form .experince label {
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.donate form .experince textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.donate form .credit-option {
+  font-size: 0;
+  width: 30px;
+  padding: 0;
+  float: none;
+}
+
+.donate form button {
+  font-family: "El Messiri", sans-serif;
+  color: white;
+  background-color: var(--sub-color);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: block;
+  margin: 1rem auto;
+}
+
+.donate form button:hover {
+  background-color: var(--main-color);
+}
+
+/* ----------------------------------- */
+/*
+.donate form {
+  width: 70%;
   font-size: 20px;
   border: solid #e2e2e2 2px;
   margin: 1rem auto;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 5px;
 }
 
@@ -17,8 +121,7 @@
   text-align: center;
   color: var(--main-color);
   border-bottom: 1px solid #495057;
-  padding: 0.3rem;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
 }
 
 .donate form > div {
@@ -79,6 +182,7 @@
 .donate form button:hover {
   background-color: var(--sub-color);
 }
+*/
 /* --------------- Footer ------------------------- */
 footer {
   margin: 0;
