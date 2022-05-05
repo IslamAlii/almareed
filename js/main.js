@@ -1,6 +1,7 @@
 let allCasses = document.getElementById("all-cases"),
   currentCases = document.getElementById("current-cases"),
   allCaravans = document.getElementById("all-caravans"),
+  allMedicalDevolpment = document.getElementById("all-medical-development"),
   dropdown = document.querySelector(".dropdown"),
   dropdownMenu = document.querySelector(".dropdown-menu");
 
@@ -34,6 +35,13 @@ window.onscroll = () => {
       Number(allCaravans.innerText) >= allCaravans.getAttribute("data-goal")
         ? (allCaravans.innerText = allCaravans.getAttribute("data-goal"))
         : (allCaravans.innerText = Number(allCaravans.innerText) + 10);
+
+      Number(allMedicalDevolpment.innerText) >=
+      allMedicalDevolpment.getAttribute("data-goal")
+        ? (allMedicalDevolpment.innerText =
+            allMedicalDevolpment.getAttribute("data-goal"))
+        : (allMedicalDevolpment.innerText =
+            Number(allMedicalDevolpment.innerText) + 1);
     }, 250);
   }
 };

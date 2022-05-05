@@ -5,6 +5,7 @@ header main {
   background-size: cover;
 }
 
+/* ---------------------- About section ------------------- */
 .about .about-container {
   margin-top: 1rem;
   display: grid;
@@ -66,11 +67,12 @@ header main {
   transform: translatey(-10px);
 }
 
+/* ------------------ Counter section ------------------------ */
 .counter {
   color: white;
   background-color: var(--sub-color);
   margin-top: 5rem;
-  padding: 3rem;
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -196,13 +198,35 @@ footer {
 }
 /* --------------- Responsive styles --------------- */
 @media (max-width: 992px) {
+  .about .about-container {
+    display: block;
+  }
+
+  .about .about-container div .btn {
+    margin-top: 0.5rem;
+  }
+
+  .about .about-container img {
+    margin-top: 1.5rem;
+    height: 550px;
+  }
+
   .fields .fields-container {
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(2, 45%);
+    row-gap: 4rem;
+  }
+
+  .counter .container {
+    grid-template-columns: repeat(2, 45%);
     row-gap: 4rem;
   }
 }
 
 @media (max-width: 768px) {
+  .about .about-container img {
+    height: 350px;
+  }
+
   .fields .fields-container {
     grid-template-columns: repeat(2, 49%);
   }

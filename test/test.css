@@ -1,0 +1,11 @@
+.carusol-container {
+  width: 800px;
+  margin: 5rem auto;
+}
+
+.carusol-container .carusol-slide {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+}

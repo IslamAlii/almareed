@@ -1,0 +1,100 @@
+.specific-caravan {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.specific-caravan .container .sub-heading {
+  font-family: "El Messiri", sans-serif;
+  color: var(--sub-color);
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.specific-caravan .container .gallery .gallery-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+
+.specific-caravan .container .gallery .gallery-container img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.specific-caravan .container .gallery .gallery-container img:hover {
+  border: 1px solid var(--main-color);
+  transform: translatey(-10px);
+}
+
+.analysis {
+  color: white;
+  background-color: var(--sub-color);
+  margin-top: 3rem;
+  padding: 1rem 0 3rem;
+  text-align: center;
+}
+
+.analysis .analysis-container {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: space-between;
+}
+
+.analysis-heading {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.analysis .analysis-container > div {
+  margin-top: 1rem;
+}
+
+.analysis .analysis-container > div i {
+  font-size: 50px;
+  display: block;
+}
+
+.analysis .analysis-container > div .number {
+  font-size: 50px;
+  display: block;
+  font-weight: bold;
+}
+
+footer {
+  margin: 0;
+}
+
+/* --------------- Responsive styles --------------- */
+@media (max-width: 992px) {
+  .specific-caravan .specific-caravan-container {
+    grid-template-columns: repeat(3, 32%);
+    row-gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .specific-caravan .specific-caravan-container {
+    grid-template-columns: repeat(2, 49%);
+  }
+
+  .specific-caravan .specific-caravan-container > a {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .specific-caravan .specific-caravan-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .specific-caravan .specific-caravan-container > a {
+    height: 300px;
+  }
+}
