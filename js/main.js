@@ -66,3 +66,5 @@ percentage.forEach((e, i) => {
     (Number(raisedNumber[i].innerText) / Number(goalNumber[i].innerText)) * 100
   )}%`;
 });
+
+// git
