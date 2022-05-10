@@ -134,18 +134,6 @@ header main {
   display: inline-block;
 }
 
-.inner1 {
-  width: 80%;
-}
-
-.inner2 {
-  width: 70%;
-}
-
-.inner3 {
-  width: 50%;
-}
-
 .current-cases .current-cases-container > div .img .number {
   color: white;
   background-color: var(--sub-color);

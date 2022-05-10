@@ -26,22 +26,43 @@ window.onscroll = () => {
     setInterval(() => {
       Number(allCasses.innerText) >= allCasses.getAttribute("data-goal")
         ? (allCasses.innerText = allCasses.getAttribute("data-goal"))
-        : (allCasses.innerText = Number(allCasses.innerText) + 100);
+        : (allCasses.innerText =
+            Number(allCasses.innerText) +
+            (Number(allCasses.getAttribute("data-goal")) / 100) * 1);
 
       Number(currentCases.innerText) >= currentCases.getAttribute("data-goal")
         ? (currentCases.innerText = currentCases.getAttribute("data-goal"))
-        : (currentCases.innerText = Number(currentCases.innerText) + 1);
+        : (currentCases.innerText =
+            Number(currentCases.innerText) +
+            (Number(currentCases.getAttribute("data-goal")) / 100) * 1);
 
       Number(allCaravans.innerText) >= allCaravans.getAttribute("data-goal")
         ? (allCaravans.innerText = allCaravans.getAttribute("data-goal"))
-        : (allCaravans.innerText = Number(allCaravans.innerText) + 10);
+        : (allCaravans.innerText =
+            Number(allCaravans.innerText) +
+            (Number(allCaravans.getAttribute("data-goal")) / 100) * 1);
 
       Number(allMedicalDevolpment.innerText) >=
       allMedicalDevolpment.getAttribute("data-goal")
         ? (allMedicalDevolpment.innerText =
             allMedicalDevolpment.getAttribute("data-goal"))
         : (allMedicalDevolpment.innerText =
-            Number(allMedicalDevolpment.innerText) + 1);
-    }, 250);
+            Number(allMedicalDevolpment.innerText) +
+            (Number(allMedicalDevolpment.getAttribute("data-goal")) / 100) * 1);
+    }, 300);
   }
 };
+
+let goalNumber = document.querySelectorAll(".goal-number");
+let raisedNumber = document.querySelectorAll(".raised-number");
+let percentage = document.querySelectorAll(".current-casses-percentage");
+let inner = document.querySelectorAll(".current-cases-inner");
+
+percentage.forEach((e, i) => {
+  inner[i].style.width = `${Math.round(
+    (Number(raisedNumber[i].innerText) / Number(goalNumber[i].innerText)) * 100
+  )}%`;
+  e.innerText = `${Math.round(
+    (Number(raisedNumber[i].innerText) / Number(goalNumber[i].innerText)) * 100
+  )}%`;
+});
